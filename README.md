@@ -6,67 +6,36 @@ A collection of Linked List implementations and problems solved using Java.
 
 A Linked List is a linear data structure where elements are stored in nodes. Each node contains:
 
-data – stores the value
-next – stores the reference to the next node
-
-Unlike arrays, linked lists do not require contiguous memory.
-
-📂 Types of Linked List
-Singly Linked List
-Doubly Linked List
-Circular Linked List
+data – stores the value  <br>
+next – stores the reference to the next node <br>
 
 
-🧩 Operations Covered
-Singly Linked List
-Create a Linked List
-Insert at Beginning
-Insert at End
-Insert at Specific Position
-Delete First Node
-Delete Last Node
-Delete Node at Specific Position
-Search an Element
-Display Linked List
-Find Length of Linked List
-Reverse Linked List
-Find Middle Node
-Detect Cycle
-Remove Cycle
-Find Nth Node from End
+
+📂 Types of Linked List<br>
+Singly Linked List<br>
+Doubly Linked List<br>
+Circular Linked List<br>
 
 
-💻 Technologies Used
-Language: Java
-Concept: Data Structures & Algorithms
-IDE: VS Code / Sublime Text
+🧩 Operations Covered<br>
+Singly Linked List<br>
+Create a Linked List<br>
+Insert at Beginning<br>
+Insert at End<br>
+Insert at Specific Position<br>
+Delete First Node<br>
+Delete Last Node<br>
+Delete Node at Specific Position<br>
+Search an Element<br>
+Display Linked List<br>
+Find Length of Linked List<br>
+Reverse Linked List<br>
+Find Middle Node<br>
+Detect Cycle<br>
+Remove Cycle<br>
+Find Nth Node from End<br>
 
 
-📁 Project Structure
-Linked-List/
-│
-├── Singly_Linked_List/
-│   ├── CreateLinkedList.java
-│   ├── Insert_First.java
-│   ├── Insert_Last.java
-│   ├── Insert_Position.java
-│   ├── Remove_First.java
-│   ├── Remove_Last.java
-│   ├── Remove_Position.java
-│   ├── Search.java
-│   ├── Reverse.java
-│   └── MiddleNode.java
-│
-├── Doubly_Linked_List/
-│   └── ...
-│
-├── Circular_Linked_List/
-│   └── ...
-│
-└── README.md
-
-🔗 Basic Structure
-[10 | •] → [20 | •] → [30 | •] → NULL
-  ↑
- HEAD
-Each node points to the next node.
+💻 Technologies Used<br>
+Language: Java<br>
+Concept: Data Structures & Algorithms<br>

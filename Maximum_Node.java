@@ -23,17 +23,17 @@ public class Maximum_Node{
         }
     }
 
-    // Minimum Node in Linked List
+    // Maximum Node in Linked List
     public void maximumNode(){
-        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
         node temp = head;
         while(temp != null){
-            if(temp.data < min){
-                min = temp.data;
+            if(temp.data > max){
+                max = temp.data;
                 temp = temp.next;
             }else temp = temp.next;
         }
-        System.out.println("Minimum Node : " + min);
+        System.out.println("Maximum Node : " + max);
     }
 
     public static void main(String[] args) {

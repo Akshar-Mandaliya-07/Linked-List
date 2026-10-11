@@ -1,3 +1,4 @@
+// Remove nth node from end of linked list
 public class RemoveNthNodeFromEnd{
     class node{
         int data;

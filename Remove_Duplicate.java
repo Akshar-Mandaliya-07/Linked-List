@@ -36,15 +36,15 @@ public class Remove_Duplicate{
         while(temp != null){
             node current = temp;
             while(current != null && current.next != null){
-                if(current.next.data == current.data){
+                if(current.next.data == temp.data){
                     // if list is not sorted 
                     // if current.next.data == temp.data then current.next.next
-                    current.next = current.next.next;
+                    temp = current.next;
                 }else{
                     current = current.next;
                 }
             }
-            temp = temp.next;
+            // temp = temp.next;
         }
     }
 

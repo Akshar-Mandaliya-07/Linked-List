@@ -24,30 +24,50 @@ public class Middle_Node{
         }
     }
 
-    // Count Node
-    public int countNode(){
-        node temp = head;
-        int count = 0;
-        while(temp != null){
-            count = count + 1;
-            temp = temp.next;
+    // Find the Middle Node
+    public int middleNode(){
+        if(head == null)   return -1;
+        else{
+            node slow = head;
+            node fast = head;
+
+            while(fast != null && fast.next != null){
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+            return slow.data;
         }
-        //count / 2;
-        return count / 2;
     }
 
-    public int findmiddle(int pos){
-        node temp = head;
-        if(head == null)  return 0;
-        else{
-            for(int i = 0 ; i < pos - 1 ; i++){
-                temp = temp.next;
-            }
-        }
-        return temp.next.data;
-    }
+
+
+    // Count Node
+    // public int countNode(){
+    //     node temp = head;
+    //     int count = 0;
+    //     while(temp != null){
+    //         count = count + 1;
+    //         temp = temp.next;
+    //     }
+    //     //count / 2;
+    //     return count / 2;
+    // }
+
+    // public int findmiddle(int pos){
+    //     node temp = head;
+    //     if(head == null)  return 0;
+    //     else{
+    //         for(int i = 0 ; i < pos - 1 ; i++){
+    //             temp = temp.next;
+    //         }
+    //     }
+    //     return temp.next.data;
+    // }
+
+
     public static void main(String[] args) {
         Middle_Node MN = new Middle_Node();
+<<<<<<< HEAD
         MN.InsertLast(1);
         MN.InsertLast(2);
         MN.InsertLast(3);
@@ -58,6 +78,20 @@ public class Middle_Node{
         System.out.print(ans);
         int data = MN.findmiddle(ans);
         System.out.print(data);
+=======
+        MN.InsertLast(12);
+        MN.InsertLast(24);
+        MN.InsertLast(36);
+        MN.InsertLast(48);
+        MN.InsertLast(60);
+        MN.InsertLast(72);
+        int ans = MN.middleNode();
+        System.out.println(ans);
+        // int ans = MN.countNode();
+        // // System.out.print(ans);
+        // int data = MN.findmiddle(ans);
+        // System.out.print(data);
+>>>>>>> 7745bb0f4703ce7e2d16ceb1908488572df215c4
     }
 
 }

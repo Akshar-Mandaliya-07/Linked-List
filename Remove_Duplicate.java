@@ -39,12 +39,12 @@ public class Remove_Duplicate{
                 if(current.next.data == temp.data){
                     // if list is not sorted 
                     // if current.next.data == temp.data then current.next.next
-                    temp = current.next;
+                    current.next = current.next.next;
                 }else{
                     current = current.next;
                 }
             }
-            // temp = temp.next;
+            temp = temp.next;
         }
     }
 

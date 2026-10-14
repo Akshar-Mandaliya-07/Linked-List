@@ -48,14 +48,14 @@ public class Middle_Node{
     }
     public static void main(String[] args) {
         Middle_Node MN = new Middle_Node();
-        MN.InsertLast(12);
-        MN.InsertLast(24);
-        MN.InsertLast(36);
-        MN.InsertLast(48);
-        MN.InsertLast(60);
+        MN.InsertLast(1);
+        MN.InsertLast(2);
+        MN.InsertLast(3);
+        MN.InsertLast(4);
+        MN.InsertLast(5);
         // MN.InsertLast(72);
         int ans = MN.countNode();
-        // System.out.print(ans);
+        System.out.print(ans);
         int data = MN.findmiddle(ans);
         System.out.print(data);
     }
